@@ -148,9 +148,10 @@ nav > button {
   font-size: 6rem;
 }
 .cell-number-large > span {
-  letter-spacing: -0.25rem;
+  letter-spacing: -0.5rem;
   transform-origin: right center;
-  transform: scaleX(0.9);
+  transform: scaleX(0.85);
+  margin-right: 0.25rem;
 }
 #taxi-status {
   width: 3.75rem;
