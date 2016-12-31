@@ -110,17 +110,19 @@ nav > button {
 /* .display-cell related */
 .cell-jobs {
   width: 12rem;
+  padding: 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  overflow: hidden;
 }
 .cell-jobs .me {
-  background: rgba(255, 31, 31, 0.25)
+  background: rgba(255, 255, 255, 0.15)
 }
 .clsicon {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: -0.125rem;
-}
-.clsicon:first-of-type {
-  margin-left: 0rem;
+  -webkit-filter: grayscale(1);
 }
 .cell-number, .cell-number-narrow {
   letter-spacing: -0.1rem;
