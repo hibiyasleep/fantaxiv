@@ -1,0 +1,41 @@
+
+body {
+  background: #222;
+  color: #fff;
+  width: 30rem;
+  height: 20rem;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main {
+  width: 26rem;
+  height: 14.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.display-cell {
+  display: flex;
+  align-items: center;
+}
+
+aside {
+  width: 3rem;
+  height: 14.5rem;
+  margin-top: 1rem;
+}
+
+footer {
+  width: 30rem;
+  height: 1rem;
+}
+nav {
+  width: 30rem;
+  height: 3rem;
+}
