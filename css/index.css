@@ -13,6 +13,9 @@ body {
 
   display: flex;
   flex-wrap: wrap;
+
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 @media (max-width: 480px) {
@@ -109,7 +112,7 @@ nav > button {
   width: 12rem;
 }
 .cell-jobs .me {
-  background: rgba(255, 0, 0, 0.2)
+  background: rgba(255, 31, 31, 0.25)
 }
 .clsicon {
   width: 1.5rem;
@@ -187,7 +190,6 @@ nav > button {
 .horse {
   width: 6rem;
   height: 4rem;
-  border: 1px solid red;
 }
 .display-horse > .cell-number {
   width: 100%;
