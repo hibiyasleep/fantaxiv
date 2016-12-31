@@ -5,6 +5,8 @@ body {
   width: 30rem;
   height: 20rem;
 
+  margin: 0;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -18,6 +20,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+
+  background: #000;
 }
 
 .display-cell {
