@@ -14,9 +14,6 @@
   </head>
   <body>
     <main>
-      <p>
-
-      </p>
       <!--
       <span id="label-time">0</span>
       <span id="label-damage">0</span>
@@ -25,18 +22,68 @@
       <span id="label-miss">0</span>/<span id="label-swing">0</span>
       <span id="label-pet-merged">0</span>
       -->
-      <p id="list-jobs">
+      <!-- line #1: h=3rem -->
+      <div class="cell-jobs" id="list-jobs">
 
-      </p>
+      </div>
+      <div class="cell-number-narrow" id="label-rank">
+        0/0
+      </div>
+      <div class="cell-number-narrow right"
+           id="label-time">
+        0:00
+      </div>
+      <!-- line #2: h=6rem -->
+      <div class="display-horse">
+        <div class="horse"> </div>
+        <div class="cell-number" id="label-damagep"> </div>
+      </div>
+      <div class="cell-number-large right">
+        <span id="label-damage">
+          0
+        </span>
+      </div>
+      <!-- line #3: h=3rem -->
+      <div class="cell-number" id="label-taximeter">
+
+      </div>
+      <div class="cell-number-2line right">
+        <span>
+          <span id="label-miss">0</span><br />
+          <span id="label-swing">0</span>
+        </span>
+      </div>
+      <div class="cell-number-narrow right"
+           id="label-dps">
+        0
+      </div>
+      <div class="cell-number right" id="label-rdps">
+        0
+      </div>
+      <!-- line #4: h=2.5rem -->
+      <div id="taxi-status"> <!-- :after --> </div>
+      <div class="cell-location" id="label-location">
+      </div>
     </main>
     <aside>
-      ..
+      <br />
+      <br />
+      <br />
+      <br />
+      <span style="font-size:1.5rem;">딜</span>
+      <br />
+      0.01
     </aside>
-    <footer>
-      1. 아지스 라 기함섬
+    <footer id="label-player-list">
+      ...
     </footer>
     <nav>
+      <button> 빈차 </button>
+      <button> 주행 </button>
       <button id="toggle-pet-merge"> 할증 </button>
+      <button> 복합 </button>
+      <button onclick="location.reload()"> 지불 </button>
+
     </nav>
   </body>
 </html>
