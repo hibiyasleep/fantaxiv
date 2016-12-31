@@ -71,6 +71,18 @@ footer {
 
   color: #b0bec5;
 }
+footer > ol {
+  list-style: decimal;
+  list-style-position: inside;
+}
+footer li {
+  float: left;
+  margin-right: 0.25rem;
+}
+footer > ol.blur > li:not(.me) {
+  filter: blur(0.15rem);
+  -webkit-filter: blur(0.15rem);
+}
 nav {
   width: 30rem;
   height: 3rem;
@@ -88,6 +100,9 @@ nav > button {
 /* .display-cell related */
 .cell-jobs {
   width: 12rem;
+}
+.cell-jobs .me {
+  background: rgba(255, 0, 0, 0.2)
 }
 .clsicon {
   width: 1.5rem;
