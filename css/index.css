@@ -1,0 +1,206 @@
+html {
+  background: none;
+}
+body {
+  background: #222;
+  color: #fff;
+  width: 30rem;
+  height: 20rem;
+
+  margin: 0;
+
+  font-family: 'HY견고딕', 'Roboto', 'Dotum';
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: calc(100vw / 30)
+  }
+}
+
+.right {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+main {
+  width: 26rem;
+  height: 14.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  background: #000;
+}
+
+main > * {
+  height: 3rem;
+
+  font-size: 2.5rem;
+  padding: 0.25rem;
+
+  display: flex;
+  align-items: center;
+}
+
+aside {
+  width: 3rem;
+  height: 14.5rem;
+  margin-top: 1rem;
+  padding-left: 0.25rem;
+}
+
+footer {
+  width: 30rem;
+  height: 1.5rem;
+
+  margin-left: 1rem;
+
+  font-size: 0.75rem;
+  font-family: 'Roboto', 'Malgun Gothic', sans-serif;
+  font-weight: 200;
+
+  line-height: 1.5rem;
+  overflow: hidden;
+
+  color: #b0bec5;
+}
+nav {
+  width: 30rem;
+  height: 3rem;
+  font-size: 1.5rem;
+
+  margin-left: 4.5rem;
+
+  display: flex;
+}
+nav > button {
+  width: 4.5rem;
+  margin-left: 0.5rem;
+}
+
+/* .display-cell related */
+.cell-jobs {
+  width: 12rem;
+}
+.clsicon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: -0.125rem;
+}
+.clsicon:first-of-type {
+  margin-left: 0rem;
+}
+.cell-number, .cell-number-narrow {
+  letter-spacing: -0.1rem;
+}
+.cell-number {
+  width: 8rem;
+}
+.cell-number-narrow {
+  width: 7rem;
+}
+.cell-number-2line {
+  width: 3rem;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+.cell-number-2line > span {
+  width: 100%;
+}
+.cell-number-large {
+  width: 20rem;
+  height: 6rem;
+
+  font-size: 6rem;
+}
+.cell-number-large > span {
+  letter-spacing: -0.25rem;
+  transform-origin: right center;
+  transform: scaleX(0.9);
+}
+#taxi-status {
+  width: 3.75rem;
+  height: 2.25rem;
+
+  margin: 0.125rem;
+  font-size: 1.5rem;
+  justify-content: center;
+
+  border-radius: 0.25rem;
+  color: black;
+}
+#taxi-status:after {
+  display: inline;
+  content: '빈차';
+}
+#taxi-status.taxi-premium.taxi-premium:after {
+  display: inline;
+  content: '할증';
+}
+#taxi-status.taxi-active:after {
+  display: inline;
+  content: '주행';
+}
+.cell-location {
+  height: 2.5rem;
+  font-size: 1.5rem;
+  flex-grow: 100;
+}
+
+/* (horse cell) */
+.display-horse {
+  width: 6rem;
+  height: 6rem;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.horse {
+  width: 6rem;
+  height: 4rem;
+  border: 1px solid red;
+}
+.display-horse > .cell-number {
+  width: 100%;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+/* cell colors */
+#label-rank {
+  color: #42a5f5;
+}
+#label-time {
+  color: #66bb6a;
+}
+#label-damage {
+  color: white;
+}
+#label-taximeter {
+  color: #ec407a;
+}
+.cell-number-2line {
+  color: #ff7043;
+}
+#label-dps {
+  color: #ce93d8;
+}
+#label-rdps {
+  color: #ffee58;
+}
+#taxi-status { /* 빈차 */
+  background: #a5d6a7;
+}
+#taxi-status.taxi-active { /* 주행 */
+  background: #81d4fa;
+}
+#taxi-status.taxi-active.taxi-premium { /* 할증 (when active) */
+  background: #ef9a9a;
+}
