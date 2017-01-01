@@ -2,26 +2,40 @@ html {
   background: none;
 }
 body {
+  margin: 0;
+
+  font-family: 'HY견고딕', 'Roboto', 'Dotum', sans-serif;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  overflow: hidden;
+}
+body::after {
+  display: block;
+  content: '';
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 0;
+
+  border: 8px solid; /* Resize handle size is controlled by plugin; no ctrl */
+  border-color: transparent rgba(127, 127, 127, 0.3) rgba(127, 127, 127, 0.3) transparent;
+  background: rgba(127, 127, 127, 0.1);
+}
+#container {
   background: #222;
   color: #fff;
   width: 30rem;
   height: 20rem;
 
-  margin: 0;
-
-  font-family: 'HY견고딕', 'Roboto', 'Dotum';
-
   display: flex;
   flex-wrap: wrap;
 
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-@media (max-width: 480px) {
-  html {
-    font-size: calc(100vw / 30)
-  }
+  transform-origin: left top;
 }
 
 .right {
