@@ -36,6 +36,9 @@ body::after {
   flex-wrap: wrap;
 
   transform-origin: left top;
+
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 0.125rem rgba(255, 255, 255, 0.125) inset;
 }
 
 .right {
@@ -54,7 +57,7 @@ header {
 }
 main {
   width: 26rem;
-  height: 14.5rem;
+  height: 14rem;
   margin-left: 1rem;
 
   display: flex;
@@ -119,6 +122,30 @@ nav {
 nav > button {
   width: 4.5rem;
   margin-left: 0.5rem;
+
+  box-shadow: 0 0.5rem 0.125rem rgba(255, 255, 255, 0.25) inset,
+              0 -0.25rem 0.25rem rgba(0, 0, 0, 0.125) inset;
+}
+nav > button:first-of-type {
+  border-top-left-radius: 0.75rem;
+}
+nav > button:last-of-type {
+  border-top-right-radius: 0.75rem;
+}
+#end-encounter {
+  background: #fafafa;
+}
+#toggle-blur {
+  background: #bbdefb;
+}
+#toggle-pet-merge {
+  background: #ef9a9a;
+}
+#toggle-detail {
+  background: #fff59d;
+}
+#reload {
+  background: #aed581;
 }
 
 /* .display-cell related */
@@ -157,9 +184,9 @@ nav > button {
 }
 .cell-number-large {
   width: 20rem;
-  height: 6rem;
+  height: 5.5rem;
 
-  font-size: 6rem;
+  font-size: 5.5rem;
 }
 .cell-number-large > span {
   letter-spacing: -0.5rem;
@@ -199,14 +226,14 @@ nav > button {
 /* (horse cell) */
 .display-horse {
   width: 6rem;
-  height: 6rem;
+  height: 5.5rem;
 
   display: flex;
   flex-wrap: wrap;
 }
 .horse {
   width: 6rem;
-  height: 4rem;
+  height: 3.5rem;
 }
 .display-horse > .cell-number {
   width: 100%;
