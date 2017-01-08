@@ -27,7 +27,7 @@ body::after {
   background: rgba(127, 127, 127, 0.1);
 }
 #container {
-  background: #222;
+  background: #181818;
   color: #fff;
   width: 30rem;
   height: 20rem;
@@ -38,7 +38,8 @@ body::after {
   transform-origin: left top;
 
   border-radius: 0.75rem;
-  box-shadow: 0 0.5rem 0.125rem rgba(255, 255, 255, 0.125) inset;
+  box-shadow: 0 0.5rem 0.125rem rgba(255, 255, 255, 0.125) inset,
+              0 -0.5rem 0.125rem rgba(0, 0, 0, 0.25) inset;
 }
 
 .right {
